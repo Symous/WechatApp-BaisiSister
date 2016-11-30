@@ -7,13 +7,19 @@
 * 数据来源： [百思不得姐] API
 * 开发环境：Windows 10 64 bit 
 * 开发工具：微信web开发者工具 v0.11.112301
-## 功能：
+
+# 功能：
 * 获取文字、图片、视频段子。
 * 下拉刷新、上拉加载更多数据。
 * 图片、视频预览。
 
-## 截图 
+
+# 截图 
 
 ![image](https://github.com/Symous/WechatApp-BaisiSister/blob/master/ShowDemo.gif )   
 
+# 安装预览
+获取源码后，直接在微信web开发者工具中打开即可。
 
+# 其他
+Thanks： RebeccaHanjw/weapp-wechat-zhihu (引用其中简洁美观的WXSS布局 :D)

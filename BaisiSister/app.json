@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/pics/pics",
+    "pages/video/video",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#d81e06",
+    "navigationBarTitleText": "这个很有意思",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color": "#626567",
+    "selectedColor": "#2A8CE5",
+    "backgroundColor": "#FBFBFB",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "段子",
+      "iconPath": "icon/iText.png",
+      "selectedIconPath": "icon/iText_p.png"
+    },
+    {
+      "pagePath": "pages/video/video",
+      "text": "视频",
+      "iconPath": "icon/iVideo.png",
+      "selectedIconPath": "icon/iVideo_p.png"
+    },
+    {
+      "pagePath": "pages/pics/pics",
+      "text": "趣图",
+      "iconPath": "icon/iPic.png",
+      "selectedIconPath": "icon/iPic_p.png"
+    }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000
+  },
+  "debug":true
+}

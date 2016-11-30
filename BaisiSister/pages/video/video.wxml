@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<scroll-view scroll-y="true" class="container"  lower-threshold="5" bindscrolltolower="lower">
+
+    <block wx:for="{{jokes}}">
+        <view class="feed-item">
+            <view class="feed-source">
+                <a>
+                    <view class="avatar">
+                        <image src="{{item.profile_image}}"></image>
+                    </view>
+                    <text>{{item.name}}</text>
+                </a>
+                <text class="item-more">{{item.create_time}}</text>
+            </view>
+            <view class="feed-content">
+                <view class="question" qid="{{question_id}}" bindtap="bindQueTap">
+                    <a class="question-link">
+                        <!--<text>{{item.text}}</text>-->
+                        <video src="{{item.video_uri}}"></video>
+                    </a>
+                </view>
+                <view class="answer-body">
+                    <view bindtap="bindItemTap">
+                        <text class="answer-txt" aid="{{answer_id}}">{{item.text}}</text>
+                    </view>
+                    <view class="answer-actions" bindtap="bindItemTap">
+                        <view class="like dot">
+                            <a>{{item.love}} 顶 </a>
+                        </view>
+                        <view class="comments dot">
+                            <a>{{item.hate}} 踩 </a>
+                        </view>
+                        <!--<view class="follow-it">
+                            <a>关注问题</a>
+                        </view>-->
+                    </view>
+                </view>
+            </view>
+        </view>
+    </block>
+</scroll-view>
+
